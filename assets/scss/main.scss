@@ -1,0 +1,37 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/table.jpg);
+  background-size: cover;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.sign {
+  right: 10px;
+  bottom: 20px;
+  transform: rotate(-20deg);
+  background-color: #a16b25;
+  color: #e5e5e5; 
+  font-size: 14pt;
+}
+
+.theme-font {
+  color: white;
+  text-shadow: 2px 2px 0px $success;
+  font-family: 'Amarante', cursive;
+}
+
+.text-shadow-light {
+  text-shadow: 1px 1px 2px $light;
+}
+
